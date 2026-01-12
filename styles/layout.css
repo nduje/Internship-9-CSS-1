@@ -1,12 +1,13 @@
 footer {
     background-color: var(--muji-gray);
     color: var(--muji-white);
+    padding-bottom: 3em;
 }
 
 #footer-navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     padding: 4em;
 }
@@ -30,4 +31,51 @@ footer {
 
 li {
     list-style: none;
+}
+
+.outer-footer-container .footer-container {
+    margin-bottom: 2em;
+}
+
+#footer-signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-signature hr {
+    width: 35%;
+    height: 1px;
+    border: none;
+    background-color: var(--muji-white);
+}
+
+#footer-signature div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-signature div img {
+    width: 75px;
+    height: 75px;
+    margin-right: 2em;
+}
+
+#footer-signature div label {
+    font-size: 14px;
+}
+
+footer > label {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: 500;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0 3em 0 0;
+    color: var(--muji-white);
 }
