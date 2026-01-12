@@ -1,0 +1,33 @@
+footer {
+    background-color: var(--muji-gray);
+    color: var(--muji-white);
+}
+
+#footer-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 4em;
+}
+
+.footer-container {
+    flex: 1;
+    max-width: 220px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.footer-container h3 {
+    margin: 1em 0;
+}
+
+.footer-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+li {
+    list-style: none;
+}
