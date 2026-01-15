@@ -1,4 +1,5 @@
 body {
     font-family: var(--font-main);
     color: var(--color-black);
+    background-color: var(--muji-white);
 }

@@ -265,6 +265,88 @@ main {
     transform: translateX(4px);
 }
 
+#best-sellers {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    color: var(--muji-gray)
+}
+
+#best-sellers h3 {
+    margin-bottom: 1em;
+}
+
+#best-sellers-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#best-sellers-images-container a {
+    width: 100%;
+    height: 100%;
+}
+
+#best-sellers * {
+    text-decoration: none;
+}
+
+.best-sellers-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 450px;
+    height: 450px;
+    padding: 1em;
+    font-weight: bold;
+    color: var(--muji-white);
+    background-size: cover;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.best-sellers-image span {
+    display: inline-block;
+    position: relative;
+}
+
+.best-sellers-image {
+    text-decoration: none;
+}
+
+.best-sellers-image:hover {
+    text-decoration: none;
+}
+
+.best-sellers-image span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background-color: var(--muji-red);
+    transition: width 0.3s ease;
+}
+
+.best-sellers-image:hover span::after {
+    width: 100%;
+}
+
+#best-sellers-image-1 {
+    background-image: url("../assets/images/best-sellers/25aw-best-sellers-women-864x864-02.jpg");
+}
+
+#best-sellers-image-2 {
+    background-image: url("../assets/images/best-sellers/25aw-best-sellers-men-864x864-02.jpg");
+}
+
+#best-sellers-image-3 {
+    background-image: url("../assets/images/best-sellers/25aw-best-sellers-home-864x864-03.jpg");
+}
+
 #highlights {
     background-color: var(--muji-light-gray);
     padding: 5em 0 4em 5em;
