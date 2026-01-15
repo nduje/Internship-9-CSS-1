@@ -17,11 +17,12 @@ header {
     overflow: hidden;
     background-color: var(--muji-gray);
     color: var(--muji-white);
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 1em;
     gap: 8em;
     min-width: max-content;
-    animation: scroll 45s linear infinite;
+    animation: scroll 90s linear infinite;
+    animation-range: contain;
 }
 
 @keyframes scroll {
@@ -262,6 +263,90 @@ main {
 
 #hero-gender-box a:hover .hero-arrow {
     transform: translateX(4px);
+}
+
+#highlights {
+    background-color: var(--muji-light-gray);
+    padding: 5em 0 4em 5em;
+    color: var(--muji-gray);
+}
+
+#highlights-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#highlights-arrows {
+    margin-right: 1em;
+}
+
+.arrows {
+    margin: 0.2em;
+    opacity: 70%;
+    width: 20px;
+    height: auto;
+}
+
+.left-arrow {
+    opacity: 20%;
+}
+
+#highlights-items-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 1em;
+}
+
+#highlights-items-container::-webkit-scrollbar {
+    display: none;
+}
+
+.highlights-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.highlights-links span {
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+
+    font-weight: bold;
+}
+
+.highlights-links:hover {
+    text-decoration: none;
+}
+
+.highlights-links span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background-color: var(--muji-red);
+    transition: width 0.3s ease;
+}
+
+.highlights-links:hover span::after {
+    width: 100%;
+}
+
+.highlights-images {
+    width: 350px;
+    height: 350px;
 }
 
 footer {
