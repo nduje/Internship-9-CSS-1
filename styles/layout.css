@@ -349,6 +349,54 @@ main {
     height: 350px;
 }
 
+
+#stories-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--muji-white);
+    padding: 5em;
+    color: var(--muji-gray);
+    gap: 1em;
+}
+
+#stories-items-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+}
+
+.stories {
+    flex: 1;
+    min-width: 0;
+}
+
+.stories-images {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.stories a h3 {
+    margin: 0.5em 0 0.5em 0;
+}
+
+.stories a:hover {
+    text-decoration: none;
+    color: var(--muji-red);
+}
+
+.stories a p {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.stories a span {
+    font-style: italic;
+}
+
 footer {
     background-color: var(--muji-gray);
     color: var(--muji-white);
