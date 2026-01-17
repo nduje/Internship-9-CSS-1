@@ -514,7 +514,6 @@ main {
     font-weight: bold;
 }
 
-
 .most-popular-products-image {
     display: block;
     text-decoration: none;
@@ -913,6 +912,14 @@ footer > label {
     .best-sellers-image {
         width: 100%;
         object-fit: cover;
+    }
+
+    #most-popular-products {
+        padding: 2em 0 2em 1em;
+    }
+
+    .hidden-item {
+        display: none;
     }
 
     #seasonal-selection-container {
