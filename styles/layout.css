@@ -315,6 +315,7 @@ main {
     padding: 8em;
     height: 80vh;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -732,6 +733,27 @@ footer > label {
 /* Mobile */
 
 @media (max-width: 599px) {
+    #hero {
+        margin: 2em 1em 2em 1em;
+        padding: 1.5em;
+    }
+
+    #hero h2 {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 24px;
+    }
+
+    #hero-gender-box {
+        gap: 1em;
+        flex-direction: column;
+    }    
+
+    #hero-gender-box a {
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     #best-sellers {
         padding: 1em;
