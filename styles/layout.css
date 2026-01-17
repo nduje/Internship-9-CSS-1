@@ -735,8 +735,6 @@ footer > label {
 
     #best-sellers {
         padding: 1em;
-        max-width: 100%;
-        overflow-x: hidden;
     }
 
     #best-sellers h3 {
@@ -758,6 +756,21 @@ footer > label {
     .best-sellers-image {
         width: 100%;
         object-fit: cover;
+    }
+
+    #seasonal-selection-container {
+        padding: 2em 0 2em 1em;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #seasonal-selection-items-container::after {
+        content: "";
+        flex: 0 0 1em;
+    }
+
+    .seasonal-selection-items {
+        font-size: 14px;
     }
     
     footer {
