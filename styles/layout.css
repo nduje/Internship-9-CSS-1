@@ -505,14 +505,12 @@ main {
 
 .most-popular-products-items .titles {
     max-width: 100%;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .most-popular-products-items .prices {
     max-width: 100%;
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     font-weight: bold;
 }
 
@@ -668,8 +666,7 @@ main {
 }
 
 .stories a p {
-    word-break: break-word;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     margin-bottom: 1em;
     line-height: 1.5em;
 }
@@ -921,7 +918,7 @@ footer > label {
     #seasonal-selection-container {
         padding: 2em 0 2em 1em;
         max-width: 100%;
-        overflow-x: hidden;
+        overflow-x: auto;
     }
 
     #seasonal-selection-items-container::after {
@@ -931,6 +928,49 @@ footer > label {
 
     .seasonal-selection-items {
         font-size: 14px;
+    }
+
+    #stories-container {
+        padding: 2em 0 2em 1em;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    #stories-items-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5em;
+    }
+
+    #stories-items-container::after {
+        content: "";
+        flex: 0 0 1em;
+    }
+
+    .stories {
+        flex: none;
+        max-width: 60vw;
+    }
+
+    .stories-images {
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .stories a h3 {
+        font-size: 14px;
+    }
+
+    .stories a p {
+        margin-bottom: 1em;
+        line-height: 1.25em;
+        font-size: 12px;
+    }
+
+    .stories a span {
+        font-size: 12px;
     }
     
     footer {
