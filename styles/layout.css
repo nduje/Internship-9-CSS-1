@@ -381,7 +381,7 @@ main {
     justify-content: flex-start;
     align-items: flex-end;
     width: 450px;
-    height: 450px;
+    aspect-ratio: 1 / 1;
     padding: 1em;
     font-weight: bold;
     color: var(--muji-white);
@@ -732,6 +732,34 @@ footer > label {
 /* Mobile */
 
 @media (max-width: 599px) {
+
+    #best-sellers {
+        padding: 1em;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #best-sellers h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    #best-sellers-items-container {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    #best-sellers-items-container a {
+        flex: 1;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .best-sellers-image {
+        width: 100%;
+        object-fit: cover;
+    }
+    
     footer {
         padding-bottom: 2em;
     }
