@@ -728,3 +728,53 @@ footer > label {
     padding: 0 3em 0 0;
     color: var(--muji-white);
 }
+
+/* Mobile */
+
+@media (max-width: 599px) {
+    footer {
+        padding-bottom: 2em;
+    }
+    
+    #footer-navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #footer-navbar > * {
+        order: 1;
+    }
+
+    #footer-navbar > .membership-wrapper {
+        order: 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        max-width: none;
+    }
+
+    #footer-signature hr {
+        width: 20%;
+        height: 0.5px;
+    }
+
+    #footer-signature > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-label {
+        margin: 2em 0 0 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 1199px) {
+
+}

@@ -33,3 +33,13 @@ form button {
     cursor: pointer;
     outline: none;
 }
+
+@media (max-width: 599px) { 
+    form input {
+        width: 90%;
+    }
+    
+    form button {
+        width: 10%;
+    }
+}
