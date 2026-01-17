@@ -46,6 +46,24 @@ header {
     margin: 1em;
 }
 
+.hamburger-menu {
+    width: 24px;
+    height: 16px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.hamburger-part {
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--muji-gray);
+}
+
 #navigation-search-bar {
     display: flex;
     flex-direction: row;
@@ -70,7 +88,7 @@ header {
 }
 
 #navigation-search-bar input:focus {
-    border: hidden;
+    border-top: hidden;
 }
 
 #navigation-logo img {
@@ -745,6 +763,55 @@ footer > label {
 /* Mobile */
 
 @media (max-width: 599px) {
+    #navigation-general {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .navigation-element {
+        order: 0;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+    }
+
+    #navigation-search-bar {
+        display: flex;
+        order: 1;
+        align-self: center;
+        width: 100%;
+    }
+
+    #navigation-menu {
+        display: none;
+    }
+
+    #navigation-logo img {
+        height: 20px;
+        width: auto;
+    }
+
+    #navigation-icons {
+        gap: 0.75em;
+    }
+
+    .navigation-icon {
+        display: none;
+    }
+
+    .accessability-icon {
+        display: flex;
+    }
+
+    .heart-icon {
+        display: flex;
+    }
+
+    .cart-icon {
+        display: flex;
+    }
+
     #header-showcase {
         flex-direction: column;
         align-items: flex-start;
@@ -771,16 +838,16 @@ footer > label {
         font-size: 2em;
     }
 
-#header-showcase-images-container {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    margin: 0;
-    padding: 1em;
-    box-sizing: border-box;
-}
+    #header-showcase-images-container {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        margin: 0;
+        padding: 1em;
+        box-sizing: border-box;
+    }
 
     #header-showcase-images-container a {
         flex: 0 0 80%;
