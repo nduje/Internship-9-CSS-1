@@ -733,6 +733,21 @@ footer > label {
 /* Mobile */
 
 @media (max-width: 599px) {
+    #highlights {
+        padding: 2em 0 2em 1em;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #highlights-items-container::after {
+        content: "";
+        flex: 0 0 1em;
+    }
+
+    .highlights-items {
+        font-size: 14px;
+    }
+    
     #hero {
         margin: 2em 1em 2em 1em;
         padding: 1.5em;
